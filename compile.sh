@@ -3,7 +3,7 @@
 git clone https://github.com/netty/netty-tcnative
 cd netty-tcnative
 git checkout tags/$NETTY_TCNATIVE_TAG
-mvn -DaprVersion=$APR_VERSION clean package
+mvn clean package
 
 mv openssl-dynamic/target/*.jar /output/
 mv openssl-static/target/*.jar /output/
